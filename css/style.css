@@ -4,19 +4,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: var(--color-8);
+}
 
 header{
-    background: red;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 75px;
+    padding-right: 75px;
 }
 
 .header__logo{
-    background: blue;
 }
 
 .header__logo img{
@@ -24,26 +25,28 @@ header{
 }
 
 .header__nav{
-    background: green;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 15px;
+    gap: 54px;
 }
 
 .header__nav li{
-    
+    list-style: none;
 }
 
 .header__nav li a{
-    
+    text-decoration: none;
+    font-family: "Poppins-SemiBold";
+    color: var(--color-1);
+    font-size: 28px;
+    display: flex;
 }
 .header__nav li a img{
 
 }
 
 .header__menu{
-    background: pink;
 }
 
 .header__menu img{
