@@ -4,3 +4,48 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header{
+    background: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header__logo{
+    background: blue;
+}
+
+.header__logo img{
+
+}
+
+.header__nav{
+    background: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.header__nav li{
+    
+}
+
+.header__nav li a{
+    
+}
+.header__nav li a img{
+
+}
+
+.header__menu{
+    background: pink;
+}
+
+.header__menu img{
+
+}
