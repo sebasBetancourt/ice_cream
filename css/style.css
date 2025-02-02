@@ -329,7 +329,7 @@ main{
 .div__container-button button{
     color: var(--color-1);
     background: transparent;
-    border-left: 1px solid var(--color-1); /* Bordes blancos en los botones */
+    border-left: 1px solid var(--color-1); 
     border-right: 1px solid var(--color-1);
     padding: 3px;
     border-radius: 6px;
