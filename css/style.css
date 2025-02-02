@@ -336,3 +336,17 @@ main{
     font-family: "Poppins-Regular";
     font-size: 11px;
 }
+
+
+footer{
+    display: flex;
+    justify-content: right;
+    padding-right: 15%;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+
+.div__container-footer{
+    display: flex;
+    gap: 25%;
+}
