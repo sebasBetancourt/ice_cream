@@ -214,3 +214,125 @@ main{
 }
 
 
+
+.section__trending {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.div__trending {
+    background: white;
+    display: flex;
+    border-radius: 30px;
+    position: relative;
+    left: 87%;
+    width: 9%;
+    height: 3%;
+    align-items: center;
+}
+.div__trending a{
+    position: relative;
+    left: 10%;
+    text-decoration: none;
+    font-family: "Poppins-Medium";
+    color: #000000;
+}
+.div__trending img{
+    position: relative;
+    width: 20%;
+    height: 40%;
+    left: 12%;
+    margin-bottom: 7px;
+}
+.div__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    gap: 20px;
+    justify-content: center;
+
+}
+.div__container-article {
+    background: transparent;
+    width: 45%;
+    display: flex;
+    height: 250px;
+    border-radius: 30px;
+    border: 2px solid white;
+}
+
+.div__container-article img{
+    width: 40%;
+    align-self: center;
+    padding-top: 60px;
+}
+.article__container{
+    display: flex;
+    width: 47%;
+    margin-left: 50px;
+    flex-direction: column;
+}
+.article__container h2{
+    font-family: "Poppins-Medium";
+    color: var(--color-1);
+    font-size: 110%;
+    margin-top: 50px;
+}
+.div__box {
+    margin-top: 18px;
+    width: 100%;
+    height: 25%;
+}
+.div__box span{
+    color: var(--color-1);
+    font-family: "Poppins-Medium";
+    font-size: 80%;
+}
+.div__box div{
+    margin-top: 10px;
+    display: flex;
+    width: 90%;
+    height: 50%;
+    gap: 10%;
+}
+.div__box div button{
+    color: var(--color-1);
+    background: transparent;
+    border-color: var(--color-1);
+    width: 40%;
+    height: 75%;
+    font-family: "Poppins-Regular";
+    font-size: 65%;
+    border-radius: 6px;
+}
+.div__container-button-complete{
+    display: flex;
+    height: 20%;
+    margin-top: 11px;
+}
+.div__container-button-complete span{
+    font-family: "Poppins-Regular";
+    color: var(--color-1);
+    font-size: 15px;
+}
+.div__container-button {
+    border: 2px solid var(--color-1);
+    display: flex;
+    width: 27%;
+    height: 50%;
+    position: relative;
+    left: 28%;
+    gap: 8px;
+    border-radius: 6px;
+}
+.div__container-button button{
+    color: var(--color-1);
+    background: transparent;
+    border-left: 1px solid var(--color-1); /* Bordes blancos en los botones */
+    border-right: 1px solid var(--color-1);
+    padding: 3px;
+    border-radius: 6px;
+    font-family: "Poppins-Regular";
+    font-size: 11px;
+}
