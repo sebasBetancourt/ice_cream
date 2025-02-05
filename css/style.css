@@ -407,16 +407,48 @@ main{
 }
 .div__product-amount {
     /* background: olive; */
-    width: 309px;
+    width: 105%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .div__product-amount label{
     color: var(--color-1);
     font-family: "Poppins-Regular";
     font-size: 28px;
 }
+
+.div__button-input{
+    display: flex;
+    width: 23%;
+    height: 60%;
+    justify-content: center;
+    border: 2px solid var(--color-1);
+    border-radius: 60px;
+}
+
+.div__product-amount button{
+    border: none;
+    background: transparent;
+    padding: 6px;
+    color: var(--color-1);
+    font-size: 16px;
+    
+}
+
+
+.div__product-amount button:first-child{
+    border-right: 2px solid var(--color-1);
+}
+.div__product-amount button:last-child{
+    border-left: 2px solid var(--color-1);
+}
+
 .div__product-amount input[type="number"]{
+    border: none;
+    width: 30%;
+    background: transparent;
+    font-family: "Poppins-Medium";
+    color: var(--color-1);
 }
 
 footer{
