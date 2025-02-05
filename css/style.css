@@ -8,8 +8,7 @@ body{
     background-image: url(../storage/img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top center;
-
+    background-position: 50% 50%;
     /* background-color: var(--color-8); */
 }
 header{
@@ -66,7 +65,11 @@ main{
     justify-content: space-between;
     margin-top: 111px;
 }
-
+.section__container article:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 47px;
+}
 .article__jumping{
     width: 679px;
     /* background: violet; */
@@ -114,24 +117,103 @@ main{
 }
 
 
+#reviews{
+    /* background: blue; */
+    /* height: 281px; */
+    height: 221px;
+    padding-top: 18px;
+    padding-left: 18px;
+    padding-right: 27px;
+    display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(var(--cards), var(--cardHeight));
+	gap: var(--cardMargin);
+	/* padding-bottom: calc(var(--cards) * var(--cardTopPadding)); */
+	/* margin-bottom: var(--cardMargin); */
+}
+/* Oculta la barra de desplazamiento predeterminada */
+#reviews::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra de desplazamiento */
+}
 
+/* Personaliza el riel de la barra de desplazamiento */
+#reviews::-webkit-scrollbar-track {
+    background: transparent; /* Color del fondo */
+}
+
+/* Personaliza el 'thumb' de la barra de desplazamiento */
+#reviews::-webkit-scrollbar-thumb {
+    background: var(--color-1); /* Color del thumb */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estiliza el thumb cuando se pasa el cursor sobre él */
+#reviews::-webkit-scrollbar-thumb:hover {
+    background: var(--color-6);
+    cursor: grab;
+}
+#reviews::-webkit-scrollbar-thumb:active {
+    cursor: grabbing;
+}
+/* Estiliza los botones de la barra de desplazamiento (si los hay) */
+#reviews::-webkit-scrollbar-button {
+    display: none;
+}
+.div__reviews-container:nth-child(1){
+    --index: 1;
+}
+.div__reviews-container:nth-child(2){
+    --index: 2;
+
+    /* top: 20px; */
+}
+.div__reviews-container:nth-child(3){
+    --index: 3;
+    /* top: 40px; */
+}
+.div__reviews-container:nth-child(4){
+    --index: 4;
+    /* top: 60px; */
+}
 .article__reviews {
     /* background: red; */
-    padding: 20px;
+    overflow-y: auto;
 }
 .div__reviews-container {
     width: 345px;
     height: 202px;
     background: var(--color-1);
     border-radius: 18px;
-    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    border: 1px solid var(--color-5);
+    position: sticky;
+    top: 0px;
+    padding-top: calc(var(--index) * var(--cardToppadding));
+    z-index: var(--index);
 }
 .div__reviews-cards {
     /* background: green; */
     /* padding: 20px; */
+}
+.div__reviews-cards::after {
+   content: "x";
+   cursor: pointer;
+   font-family: "Poppins-Medium";
+   color: var(--color-1);
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 35px;
+   height: 35px;
+   background: var(--color-8);
+   border: 1px solid var(--color-6);
+   border-radius: 100%;
+   left: -18px;
+   top: -18px;
 }
 .div__reviews-profile {
     /* background: violet; */
@@ -170,183 +252,191 @@ main{
     /* background: turquoise; */
     padding: 0;
 
-
 }
 
-
-.div__icons{
-    margin-top: 40px;
-}
-.div__icons h3{
-    font-family: "Poppins-Medium";
-    color: var(--color-1);
-    font-size: 18px;
-}
-
-.div__icons-img{
-    margin-top: 26px;
-    /* background: rebeccapurple; */
+.div__choose-type {
+    /* background: violet; */
     display: flex;
-    gap: 38px;
+    flex-direction: column;
+    gap: 15px;
+   
+}
+.div__choose-type h3{
+    color: var(--color-1);
+    font-family: "Poppins-Medium";
+    font-size: 20px;
+
+}
+.div__choose-type-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.div__choose-type-buttons a{
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+    background: var(--color-4);
+    font-family: "Poppins-Thin";
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--color-1);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    backdrop-filter: blur(3px);
+}
+
+.section__container-products {
+    /* background: red; */
+    /* padding: 20px; */
+    padding-top: 63px;
+    padding-right: 64px;
+    padding-left: 78px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.div__trendy {
+    background: var(--color-1);
+    width: 213px;
+    height: 54px;
+    border-radius: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.div__trendy h2{
+    color: var(--color-2);
+    font-family: "Poppins-Medium";
+    font-size: 28px;
+    padding-right: 19px;
+}
+.div__trendy img{
+    position: absolute;
+    top: -12px;
+    right: -2px;
     
 }
-.div__icons-img a{
-    width: 60px;
-    height: 60px;
-    border-radius: 14px;
-    outline: 1px solid var(--color-1);
-    color: var(--color-1);
-    text-decoration: none;
+.article__products{
+    /* background: green; */
+    /* padding: 20px; */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-.div__icons-img a img {
-    width: 60%; 
-    height: 60%;
-    object-fit: contain; 
-}
-
-.div__icons-img a:hover {
-    outline: none;
-    backdrop-filter: blur(24px);
-}
-
-
-
-.section__trending {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-}
-.div__trending {
-    background: white;
-    display: flex;
-    border-radius: 30px;
-    position: relative;
-    left: 87%;
-    width: 9%;
-    height: 3%;
-    align-items: center;
-}
-.div__trending a{
-    position: relative;
-    left: 10%;
-    text-decoration: none;
-    font-family: "Poppins-Medium";
-    color: #000000;
-}
-.div__trending img{
-    position: relative;
-    width: 20%;
-    height: 40%;
-    left: 12%;
-    margin-bottom: 7px;
-}
-.div__container {
-    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 1%;
-    gap: 20px;
-    justify-content: center;
-
+    column-gap: 52px;
+    row-gap: 59px;
+    padding-top: 45px;
 }
-.div__container-article {
-    background: transparent;
-    width: 45%;
+.form__container-product {
+    /* background: orange; */
+    overflow: hidden;
+    width: 690px;
+    height: 324px;
+    padding-left: 38px;
     display: flex;
-    height: 250px;
-    border-radius: 30px;
-    border: 2px solid white;
+    gap: 58px;
+    align-items: center;
+    outline: 1px solid var(--color-1);
+    border-radius: 24px;
+    backdrop-filter: blur(8px);
 }
-
-.div__container-article img{
-    width: 40%;
-    align-self: center;
-    padding-top: 60px;
+.form__container-product:hover{
+    outline: none;
+    cursor: pointer;
 }
-.article__container{
-    display: flex;
-    width: 47%;
-    margin-left: 50px;
-    flex-direction: column;
+.form__container-product:active,
+.form__container-product:active h3,
+.form__container-product:active span,
+.form__container-product:active input[type="submit"],
+.form__container-product:active label{
+    background: var(--color-1);
+    color: var(--color-2);
 }
-.article__container h2{
-    font-family: "Poppins-Medium";
-    color: var(--color-1);
-    font-size: 110%;
-    margin-top: 50px;
+.form__container-product:active input[type="submit"]{
+    outline: 1px solid var(--color-2);
 }
-.div__box {
-    margin-top: 18px;
+.form__container-product img{
+    margin-top: 140px;
+    /* background: violet; */
+    width: 265px;
+    height: 600px;
+    object-fit: none;
+}
+.div__product {
+    /* background: turquoise; */
     width: 100%;
-    height: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
 }
-.div__box span{
+.div__product h3{
     color: var(--color-1);
     font-family: "Poppins-Medium";
-    font-size: 80%;
+    font-size: 28px;
 }
-.div__box div{
-    margin-top: 10px;
-    display: flex;
-    width: 90%;
-    height: 50%;
-    gap: 10%;
-}
-.div__box div button{
+.div__product span{
     color: var(--color-1);
+    font-family: "Poppins-Medium";
+    font-size: 20px;
+}
+.div__type-order {
+    /* background: red; */
+    width: 309px;
+    display: flex;
+    gap: 31px;
+}
+.div__type-order input[type="submit"]{
+    width: 139px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    outline: 1px solid var(--color-1);
     background: transparent;
-    border-color: var(--color-1);
-    width: 40%;
-    height: 75%;
     font-family: "Poppins-Regular";
-    font-size: 65%;
-    border-radius: 6px;
-}
-.div__container-button-complete{
-    display: flex;
-    height: 20%;
-    margin-top: 11px;
-}
-.div__container-button-complete span{
-    font-family: "Poppins-Regular";
+    font-size: 18px;
     color: var(--color-1);
-    font-size: 15px;
-}
-.div__container-button {
-    border: 2px solid var(--color-1);
     display: flex;
-    width: 27%;
-    height: 50%;
-    position: relative;
-    left: 28%;
-    gap: 8px;
-    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
 }
-.div__container-button button{
+.div__product-amount {
+    /* background: olive; */
+    width: 309px;
+    display: flex;
+    justify-content: space-between;
+}
+.div__product-amount label{
     color: var(--color-1);
-    background: transparent;
-    border-left: 1px solid var(--color-1); 
-    border-right: 1px solid var(--color-1);
-    padding: 3px;
-    border-radius: 6px;
     font-family: "Poppins-Regular";
-    font-size: 11px;
+    font-size: 28px;
 }
-
+.div__product-amount input[type="number"]{
+}
 
 footer{
+    /* background: red; */
+    margin-top: 51px;
     display: flex;
-    justify-content: right;
-    padding-right: 15%;
-    margin-top: 4%;
-    margin-bottom: 2%;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
 }
-
-.div__container-footer{
+footer p{
+    color: var(--color-1);
+    font-family: "Poppins-Regular";
+    font-size: 18px;
+    padding-left: 75px;
+}
+.footer__social{
     display: flex;
-    gap: 25%;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 75px;
+    gap: 48px;
 }

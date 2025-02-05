@@ -35,29 +35,84 @@
                     <a href="#">Book Table</a>
                 </div>
             </article>
-            <article class="article__reviews"> 
-                <div class="div__reviews-container">
-                    <div class="div__reviews-cards">
-                        <div class="div__reviews-profile">
-                            <img src="storage/img/profile.png">
-                            <div class="div__reviews-rating">
-                                <h3>Uzi Nexus</h3>
-                                <div class="div__reviews-stars">
-                                    <img src="storage/img/Star.png">
-                                    <img src="storage/img/Star.png">
-                                    <img src="storage/img/Star.png">
-                                    <img src="storage/img/Star.png">
-                                    <img src="storage/img/Star-mitad.png">
+            <article> 
+                <div id="reviews" class="article__reviews">
+                    <div class="div__reviews-container">
+                        <div class="div__reviews-cards">
+                            <div class="div__reviews-profile">
+                                <img src="storage/img/profile.png">
+                                <div class="div__reviews-rating">
+                                    <h3>Uzi Nexus 1</h3>
+                                    <div class="div__reviews-stars">
+                                        <img src="storage/img/Star.png">
+                                        <img src="storage/img/Star.png">
+                                        <img src="storage/img/Star.png">
+                                        <img src="storage/img/Star.png">
+                                        <img src="storage/img/Star-mitad.png">
+                                    </div>
                                 </div>
                             </div>
+                            <p>Indulge in frozen bliss with our irresistible ice cream delights!</p>
                         </div>
-                        <p>Indulge in frozen bliss with our irresistible ice cream delights!</p>
+                    </div>
+                    <div class="div__reviews-container">
+                        <div class="div__reviews-cards">
+                            <div class="div__reviews-profile">
+                                <img src="storage/img/profile.png">
+                                <div class="div__reviews-rating">
+                                    <h3>Uzi Nexus 2</h3>
+                                    <div class="div__reviews-stars">
+                                        <img src="storage/img/Star.png">
+                                        <img src="storage/img/Star.png">
+                                        <img src="storage/img/Star.png">
+                                        <img src="storage/img/Star.png">
+                                        <img src="storage/img/Star-mitad.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Indulge in frozen bliss with our irresistible ice cream delights!</p>
+                        </div>
+                    </div>
+                    <div class="div__reviews-container">
+                        <div class="div__reviews-cards">
+                            <div class="div__reviews-profile">
+                                <img src="storage/img/profile.png">
+                                <div class="div__reviews-rating">
+                                    <h3>Uzi Nexus 3</h3>
+                                    <div class="div__reviews-stars">
+                                        <img src="storage/img/Star.png">
+                                        <img src="storage/img/Star.png">
+                                        <img src="storage/img/Star.png">
+                                        <img src="storage/img/Star.png">
+                                        <img src="storage/img/Star-mitad.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Indulge in frozen bliss with our irresistible ice cream delights!</p>
+                        </div>
+                    </div>
+                    <div class="div__reviews-container">
+                        <div class="div__reviews-cards">
+                            <div class="div__reviews-profile">
+                                <img src="storage/img/profile.png">
+                                <div class="div__reviews-rating">
+                                    <h3>Uzi Nexus 4</h3>
+                                    <div class="div__reviews-stars">
+                                        <img src="storage/img/Star.png">
+                                        <img src="storage/img/Star.png">
+                                        <img src="storage/img/Star.png">
+                                        <img src="storage/img/Star.png">
+                                        <img src="storage/img/Star-mitad.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Indulge in frozen bliss with our irresistible ice cream delights!</p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="div__icons">
+                <div class="div__choose-type">
                     <h3>Choose Type:</h3>
-                    <div class="div__icons-img">
+                    <div class="div__choose-type-buttons">
                         <a href="#"><img src="storage/img/cup-logo.png"></a>
                         <a href="#"><img src="storage/img/iceCream-logo.png"></a>
                         <a href="#"><img src="storage/img/cone-logo.png"></a>
@@ -66,105 +121,82 @@
                 </div>
             </article>
         </section>
-        <section class="section__trending">
-            <div class="div__trending">
-                <a href="#">Trending</a>
-                <img src="storage/img/fire.png" alt="fuego">
+        <section class="section__container-products">
+            <div class="div__trendy">
+                <h2>Trendy</h2>
+                <img src="storage/img/fire.png">
             </div>
-            <div class="div__container">
-                <div class="div__container-article">
-                    <img src="storage/img/img1.png" alt="">
-                    <article class="article__container">
-                        <h2>Banana Soft Cream</h2>
-                        <div class="div__box">
-                            <span>Order Type</span>
-                            <div>
-                                <button>On Table</button>
-                                <button>Delivery</button>
-                            </div>
+            <article class="article__products">
+                <form action="?" method="GET" class="form__container-product">
+                    <img src="storage/img/img1.png" >
+                    <div class="div__product">
+                        <h3>Mix Ice cream</h3>
+                        <span>Order Type:</span>
+                        <div class="div__type-order">
+                            <input type="submit" name="type-order" value="On Table">
+                            <input type="submit" name="type-order" value="Delivery">
                         </div>
-                        <div class="div__container-button-complete">
-                            <span>Rs. 250/-</span>
-                            <div class="div__container-button">
-                                <button>-</button>
-                                <span>02</span>
-                                <button>+</button>
-                            </div>
+                        <div  class="div__product-amount">
+                            <label>Rs. 199/-</label>
+                            <input type="number" name="amount" value="0">
                         </div>
-                    </article>
-                </div>
-                <div class="div__container-article" id="id__container-article">
-                    <img src="storage/img/img2.png" alt="">
-                    <article class="article__container">
-                        <h2>Banana Soft Cream</h2>
-                        <div class="div__box">
-                            <span>Order Type</span>
-                            <div>
-                                <button>On Table</button>
-                                <button>Delivery</button>
-                            </div>
+                    </div>
+                </form>
+                <form action="?" method="GET" class="form__container-product">
+                    <img src="storage/img/img2.png" >
+                    <div class="div__product">
+                        <h3>Mix Ice cream</h3>
+                        <span>Order Type:</span>
+                        <div class="div__type-order">
+                            <input type="submit" name="type-order" value="On Table">
+                            <input type="submit" name="type-order" value="Delivery">
                         </div>
-                        <div class="div__container-button-complete">
-                            <span>Rs. 250/-</span>
-                            <div class="div__container-button">
-                                <button>-</button>
-                                <span>02</span>
-                                <button>+</button>
-                            </div>
+                        <div  class="div__product-amount">
+                            <label>Rs. 199/-</label>
+                            <input type="number" name="amount" value="0">
                         </div>
-                    </article>
-                </div>
-                <div class="div__container-article">
-                    <img src="storage/img/img3.png" alt="">
-                    <article class="article__container">
-                        <h2>Banana Soft Cream</h2>
-                        <div class="div__box">
-                            <span>Order Type</span>
-                            <div>
-                                <button>On Table</button>
-                                <button>Delivery</button>
-                            </div>
+                    </div>
+                </form>
+                <form action="?" method="GET" class="form__container-product">
+                    <img src="storage/img/img3.png" >
+                    <div class="div__product">
+                        <h3>Mix Ice cream</h3>
+                        <span>Order Type:</span>
+                        <div class="div__type-order">
+                            <input type="submit" name="type-order" value="On Table">
+                            <input type="submit" name="type-order" value="Delivery">
                         </div>
-                        <div class="div__container-button-complete">
-                            <span>Rs. 250/-</span>
-                            <div class="div__container-button">
-                                <button>-</button>
-                                <span>02</span>
-                                <button>+</button>
-                            </div>
+                        <div  class="div__product-amount">
+                            <label>Rs. 199/-</label>
+                            <input type="number" name="amount" value="0">
                         </div>
-                    </article>
-                </div>
-                <div class="div__container-article">
-                    <img src="storage/img/img4.png" alt="">
-                    <article class="article__container">
-                        <h2>Banana Soft Cream</h2>
-                        <div class="div__box">
-                            <span>Order Type:</span>
-                            <div>
-                                <button>On Table</button>
-                                <button>Delivery</button>
-                            </div>
+                    </div>
+                </form>
+                <form action="?" method="GET" class="form__container-product">
+                    <img src="storage/img/img4.png" >
+                    <div class="div__product">
+                        <h3>Mix Ice cream</h3>
+                        <span>Order Type:</span>
+                        <div class="div__type-order">
+                            <input type="submit" name="type-order" value="On Table">
+                            <input type="submit" name="type-order" value="Delivery">
                         </div>
-                        <div class="div__container-button-complete">
-                            <span>Rs. 250/-</span>
-                            <div class="div__container-button">
-                                <button>-</button>
-                                <span>02</span>
-                                <button id="button-container">+</button>
-                            </div>
+                        <div  class="div__product-amount">
+                            <label>Rs. 199/-</label>
+                            <input type="number" name="amount" value="0">
                         </div>
-                    </article>
-                </div>
-            </div>
+                    </div>
+                </form>
+            </article>
         </section>
     </main>
     <footer>
-        <div class="div__container-footer">
-            <img src="storage/img/google.png" alt="">
-            <img src="storage/img/facebook.png" alt="">
-            <img src="storage/img/twitter.png" alt="">
-            <img src="storage/img/instagram.png" alt="">
+        <p>Dropecreem.com© all right reserve</p>
+        <div class="footer__social">
+            <img src="storage/img/google.png">
+            <img src="storage/img/facebook.png">
+            <img src="storage/img/twitter.png">
+            <img src="storage/img/instagram.png">
         </div>
     </footer>
 </body>
